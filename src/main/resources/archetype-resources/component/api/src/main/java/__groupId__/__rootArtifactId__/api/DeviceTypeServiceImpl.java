@@ -28,7 +28,7 @@ import ${groupId}.${rootArtifactId}.api.DeviceTypeService;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.wso2.carbon.analytics.dataservice.commons.SORT;
+import org.wso2.carbon.analytics.dataservice.commons.SortType;
 import org.wso2.carbon.analytics.dataservice.commons.SortByField;
 import org.wso2.carbon.analytics.datasource.commons.exception.AnalyticsException;
 import org.wso2.carbon.apimgt.annotations.api.API;
@@ -170,7 +170,7 @@ public class DeviceTypeServiceImpl implements DeviceTypeService {
             }
             if (sensorTableName != null) {
                 List<SortByField> sortByFields = new ArrayList<>();
-                SortByField sortByField = new SortByField("meta_time", SORT.ASC, false);
+                SortByField sortByField = new SortByField("meta_time", SortType.ASC);
                 sortByFields.add(sortByField);
                 List<SensorRecord> sensorRecords = APIUtil.getAllEventsForDevice(sensorTableName, query, sortByFields);
                 return Response.status(Response.Status.OK.getStatusCode()).entity(sensorRecords).build();

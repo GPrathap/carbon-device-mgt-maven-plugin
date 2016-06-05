@@ -377,7 +377,7 @@
         <carbon.analytics.common.version>5.0.11</carbon.analytics.common.version>
         <carbon.analytics.common.version.range>[5.0.11,6.0.0)</carbon.analytics.common.version.range>
         <carbon.analytics.version.range>[1.0.5,2.0.0]</carbon.analytics.version.range>
-        <carbon.analytics.version>1.0.6-ALPHA</carbon.analytics.version>
+        <carbon.analytics.version>1.0.6-SNAPSHOT</carbon.analytics.version>
 
         <!-- Carbon Device Management -->
         <carbon.device.mgt.version>1.1.1-SNAPSHOT</carbon.device.mgt.version>
